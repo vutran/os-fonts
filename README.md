@@ -29,8 +29,10 @@ Get all fonts.
 
 #### useType
 
-Type: 'String'
+Type: `String`
+
 Default: `system`
+
 Options: `user`, `local`, `network`, `system`
 
 The use type.
