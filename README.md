@@ -25,7 +25,7 @@ osFonts.getAll().then(fonts => {
 
 ### getAll([useType])
 
-Get all fonts.
+Returns a `Promise` with all paths to all fonts.
 
 #### useType
 
@@ -39,7 +39,7 @@ The use type.
 
 ### getFontsInDirectory(dir)
 
-Retrieve all font files in the given directory.
+Returns a `Promise` with paths to all fonts in the given directory.
 
 #### dir
 
