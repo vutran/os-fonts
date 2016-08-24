@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:ava/recommended"
+  ],
+  "plugins": ["ava"],
+  "rules": {
+    "max-len": 0
+  }
+}

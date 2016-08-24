@@ -1,0 +1,31 @@
+{
+  "name": "os-fonts",
+  "version": "0.1.0",
+  "description": "Retrieve fonts available on your OS.",
+  "keywords": ["fonts", "font", "os", "system"],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint && ava"
+  },
+  "author": "Vu Tran <vu@vu-tran.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vutran/os-fonts.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb-base": "^5.0.3",
+    "eslint-plugin-async": "^0.1.1",
+    "eslint-plugin-ava": "^3.0.0",
+    "eslint-plugin-import": "^1.14.0"
+  },
+  "ava": {
+    "babel": "inherit"
+  }
+}
