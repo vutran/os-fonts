@@ -11,10 +11,18 @@ const FONT_DIRS = {
     network: path.join('/', 'Network', 'Library', 'Fonts'),
     system: path.join('/', 'System', 'Library', 'Fonts'),
   },
-  // TODO: add support
-  win32: {},
-  // TODO: add support
-  linux: {},
+  win32: {
+    user: path.join(process.env.WINDIR, 'Fonts'),
+    local: path.join(process.env.WINDIR, 'Fonts'),
+    network: path.join(process.env.WINDIR, 'Fonts'),
+    system: path.join(process.env.WINDIR, 'Fonts'),
+  },
+  linux: {
+    user: path.join(os.homedir(), 'share', 'fonts'),
+    local: path.join(os.homedir(), '.local', 'share', 'fonts'),
+    network: path.join('/', 'usr', 'share', 'fonts'),
+    system: path.join('/', 'usr', 'share', 'fonts'),
+  },
 };
 
 /**
