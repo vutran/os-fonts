@@ -1,8 +1,13 @@
 {
   "name": "os-fonts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Retrieve fonts available on your OS.",
-  "keywords": ["fonts", "font", "os", "system"],
+  "keywords": [
+    "fonts",
+    "font",
+    "os",
+    "system"
+  ],
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
