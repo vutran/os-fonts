@@ -2,6 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 
+if (process.platform !== 'win32') {
+  process.env.WINDIR = '';
+}
+
 const FONT_DIRS = {
   // https://support.apple.com/en-us/HT201722
   // https://discussions.apple.com/thread/6866858?start=0&tstart=0
