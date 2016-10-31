@@ -35,10 +35,11 @@ const FONT_DIRS = {
  * @param {String} dir - The directory to read
  * @return {Promise} - Array of fonts
  */
-exports.getFontsInDirectory = dir => new Promise((resolve, reject) => {
+exports.getFontsInDirectory = dir => new Promise((resolve) => {
   fs.readdir(dir, (err, files) => {
     if (err) {
-      reject(err);
+      resolve([]);
+      return;
     }
     resolve(files.map(f => path.join(dir, f)));
   });
