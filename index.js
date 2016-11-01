@@ -41,7 +41,7 @@ exports.getFontsInDirectory = dir => new Promise((resolve) => {
       resolve([]);
       return;
     }
-    resolve(files.map(f => path.join(dir, f)));
+    resolve(files);
   });
 });
 
