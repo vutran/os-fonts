@@ -1,25 +1,11 @@
 {
   "name": "os-fonts",
-  "version": "0.3.1",
   "description": "Retrieve fonts available on your OS.",
-  "keywords": [
-    "fonts",
-    "font",
-    "os",
-    "system"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint index.js __tests",
-    "test": "npm run lint && jest --coverage"
-  },
+  "version": "0.3.1",
   "author": "Vu Tran <vu@vu-tran.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vutran/os-fonts.git"
+  "dependencies": {
+    "recursive-readdir": "github:niftylettuce/recursive-readdir"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-jest": "^16.0.0",
     "babel-plugin-transform-async-to-generator": "^6.16.0",
@@ -30,5 +16,21 @@
     "eslint-plugin-async": "^0.1.1",
     "eslint-plugin-import": "^2.0.1",
     "jest": "^16.0.2"
+  },
+  "keywords": [
+    "font",
+    "fonts",
+    "os",
+    "system"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vutran/os-fonts.git"
+  },
+  "scripts": {
+    "lint": "eslint index.js __tests",
+    "test": "npm run lint && jest --coverage"
   }
 }
