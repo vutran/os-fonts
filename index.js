@@ -1,5 +1,5 @@
+const recursive = require('recursive-readdir');
 const path = require('path');
-const fs = require('fs');
 const os = require('os');
 
 if (process.platform !== 'win32') {
@@ -36,7 +36,7 @@ const FONT_DIRS = {
  * @return {Promise} - Array of fonts
  */
 exports.getFontsInDirectory = dir => new Promise((resolve) => {
-  fs.readdir(dir, (err, files) => {
+  recursive(dir, (err, files) => {
     if (err) {
       resolve([]);
       return;
