@@ -32,6 +32,6 @@
   },
   "scripts": {
     "lint": "eslint index.js __tests",
-    "test": "npm run lint && jest --coverage"
+    "test": "jest --coverage"
   }
 }
