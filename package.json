@@ -31,7 +31,7 @@
     "url": "https://github.com/vutran/os-fonts.git"
   },
   "scripts": {
-    "lint": "eslint index.js __tests",
+    "lint": "eslint index.js __mocks__ __tests__",
     "test": "jest --coverage"
   }
 }
