@@ -1,6 +1,6 @@
 # os-fonts
 
-[![Travis](https://img.shields.io/travis/vutran/os-fonts/develop.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/vutran/os-fonts) [![Coveralls branch](https://img.shields.io/coveralls/vutran/os-fonts/develop.svg?maxAge=2592000&style=flat-square)](https://coveralls.io/github/vutran/os-fonts) [![license](https://img.shields.io/github/license/vutran/os-fonts.svg?maxAge=2592000&style=flat-square)](LICENSE)
+[![Travis](https://img.shields.io/travis/vutran/os-fonts/master.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/vutran/os-fonts) [![Coveralls branch](https://img.shields.io/coveralls/vutran/os-fonts/master.svg?maxAge=2592000&style=flat-square)](https://coveralls.io/github/vutran/os-fonts) [![license](https://img.shields.io/github/license/vutran/os-fonts.svg?maxAge=2592000&style=flat-square)](LICENSE)
 
 > Retrieve fonts available on your OS.
 
