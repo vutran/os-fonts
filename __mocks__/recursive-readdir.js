@@ -17,7 +17,6 @@ const recursiveReaddir = (directory, callback) => {
  *
  * @param {String[]} files - An array of files
  */
-// eslint-disable-next-line no-underscore-dangle
 recursiveReaddir.__setFiles = (files) => {
   mockFiles = files;
 };
@@ -27,7 +26,6 @@ recursiveReaddir.__setFiles = (files) => {
  *
  * @param {Boolean} flag - Set to true to return an err
  */
-// eslint-disable-next-line no-underscore-dangle
 recursiveReaddir.__setReturnError = (flag) => {
   mockError = flag;
 };
