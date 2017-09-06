@@ -4,7 +4,8 @@
   "version": "0.4.0",
   "author": "Vu Tran <vu@vu-tran.com>",
   "dependencies": {
-    "recursive-readdir": "github:niftylettuce/recursive-readdir"
+    "recursive-readdir": "^2.2.1",
+    "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
     "babel-jest": "^16.0.0",

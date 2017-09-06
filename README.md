@@ -39,6 +39,10 @@ Options: `user`, `local`, `network`, `system`
 
 The use type.
 
+### getAllSync([useType])
+
+Returns paths to all fonts (synchronous version of `getAll`).
+
 ### getFontsInDirectory(dir)
 
 Returns a `Promise` with paths to all fonts in the given directory.
@@ -48,6 +52,10 @@ Returns a `Promise` with paths to all fonts in the given directory.
 Type: `String`
 
 The directory to read
+
+### getFontsInDirectory(dir)
+
+Returns paths to all fonts in the given directory (synchronous version of `getFontsInDirectory`).
 
 ## License
 
