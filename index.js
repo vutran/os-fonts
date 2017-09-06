@@ -1,6 +1,7 @@
-const recursive = require('recursive-readdir');
 const path = require('path');
 const os = require('os');
+const recursive = require('recursive-readdir');
+const recursiveSync = require('recursive-readdir-sync');
 
 if (process.platform !== 'win32') {
     process.env.WINDIR = '';
@@ -47,6 +48,20 @@ exports.getFontsInDirectory = dir =>
     });
 
 /**
+ * Retrieve all font files in the given directory (synchronous).
+ *
+ * @param {String} dir - The directory to read
+ * @return {Promise} - Array of fonts
+ */
+exports.getFontsInDirectorySync = dir => {
+    try {
+        return recursiveSync(dir);
+    } catch (err) {
+        return [];
+    }
+};
+
+/**
  * Get all fonts.
  *
  * @param {String} - The use type.
@@ -54,3 +69,6 @@ exports.getFontsInDirectory = dir =>
  */
 exports.getAll = (useType = 'system') =>
     exports.getFontsInDirectory(FONT_DIRS[process.platform][useType]);
+
+exports.getAllSync = (useType = 'system') =>
+    exports.getFontsInDirectorySync(FONT_DIRS[process.platform][useType]);
