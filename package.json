@@ -1,7 +1,7 @@
 {
   "name": "os-fonts",
   "description": "Retrieve fonts available on your OS.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Vu Tran <vu@vu-tran.com>",
   "dependencies": {
     "recursive-readdir": "^2.2.1",
