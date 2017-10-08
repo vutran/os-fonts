@@ -30,7 +30,7 @@
     "url": "https://github.com/vutran/os-fonts.git"
   },
   "scripts": {
-    "lint": "prettier --single-quote --trailing-comma=es5 --print-width=90 --tab-width=4 --write '{__{mocks,test}__/*.js' 'index.js'",
+    "lint": "prettier --single-quote --trailing-comma=es5 --print-width=90 --tab-width=4 --write \"__{mocks,tests}__/*.js\" \"index.js\"",
     "precommit": "npm run lint",
     "test": "jest --coverage"
   }
