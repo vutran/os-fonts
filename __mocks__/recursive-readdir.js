@@ -9,7 +9,7 @@ let mockError = false;
  * @param {Function} callback
  */
 const recursiveReaddir = (directory, callback) => {
-  callback.call(null, mockError, mockFiles);
+    callback.call(null, mockError, mockFiles);
 };
 
 /**
@@ -17,8 +17,8 @@ const recursiveReaddir = (directory, callback) => {
  *
  * @param {String[]} files - An array of files
  */
-recursiveReaddir.__setFiles = (files) => {
-  mockFiles = files;
+recursiveReaddir.__setFiles = files => {
+    mockFiles = files;
 };
 
 /**
@@ -26,8 +26,8 @@ recursiveReaddir.__setFiles = (files) => {
  *
  * @param {Boolean} flag - Set to true to return an err
  */
-recursiveReaddir.__setReturnError = (flag) => {
-  mockError = flag;
+recursiveReaddir.__setReturnError = flag => {
+    mockError = flag;
 };
 
 module.exports = recursiveReaddir;
