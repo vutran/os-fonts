@@ -1,7 +1,7 @@
 {
     "name": "os-fonts",
     "description": "Retrieve fonts available on your OS.",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "author": "Vu Tran <vu@vu-tran.com>",
     "dependencies": {
         "recursive-readdir": "^2.2.1",
@@ -18,7 +18,12 @@
         "lint-staged": "^4.2.3",
         "prettier": "^1.2.2"
     },
-    "keywords": ["font", "fonts", "os", "system"],
+    "keywords": [
+        "font",
+        "fonts",
+        "os",
+        "system"
+    ],
     "license": "MIT",
     "main": "index.js",
     "repository": {
