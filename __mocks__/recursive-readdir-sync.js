@@ -7,7 +7,7 @@ let mockError = false;
  *
  * @param {String} directory
  */
-const recursiveReaddirSync = (directory) => {
+const recursiveReaddirSync = directory => {
     if (mockError) {
         throw new Error(true);
     }

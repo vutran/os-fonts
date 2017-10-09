@@ -64,7 +64,12 @@ describe('os-fonts', () => {
 
         it('should get all network fonts', async () => {
             // set up mock data
-            recursiveSync.__setFiles(['foo.ttf', 'bar.ttf', 'baz.ttf', 'qux.ttf']);
+            recursiveSync.__setFiles([
+                'foo.ttf',
+                'bar.ttf',
+                'baz.ttf',
+                'qux.ttf',
+            ]);
             const fonts = await m.getAllSync('network');
             expect(fonts.length).toBe(4);
         });
@@ -75,5 +80,4 @@ describe('os-fonts', () => {
             expect(fonts.length).toBe(0);
         });
     });
-
 });

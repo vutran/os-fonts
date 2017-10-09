@@ -1,37 +1,39 @@
 {
-  "name": "os-fonts",
-  "description": "Retrieve fonts available on your OS.",
-  "version": "0.4.1",
-  "author": "Vu Tran <vu@vu-tran.com>",
-  "dependencies": {
-    "recursive-readdir": "^2.2.1",
-    "recursive-readdir-sync": "^1.0.6"
-  },
-  "devDependencies": {
-    "babel-jest": "^16.0.0",
-    "babel-plugin-transform-async-to-generator": "^6.16.0",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.18.0",
-    "coveralls": "^2.11.14",
-    "husky": "^0.13.3",
-    "jest": "^16.0.2",
-    "prettier": "^1.2.2"
-  },
-  "keywords": [
-    "font",
-    "fonts",
-    "os",
-    "system"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vutran/os-fonts.git"
-  },
-  "scripts": {
-    "lint": "prettier --single-quote --trailing-comma=es5 --print-width=90 --tab-width=4 --write \"__{mocks,tests}__/*.js\" \"index.js\"",
-    "precommit": "npm run lint",
-    "test": "jest --coverage"
-  }
+    "name": "os-fonts",
+    "description": "Retrieve fonts available on your OS.",
+    "version": "0.4.1",
+    "author": "Vu Tran <vu@vu-tran.com>",
+    "dependencies": {
+        "recursive-readdir": "^2.2.1",
+        "recursive-readdir-sync": "^1.0.6"
+    },
+    "devDependencies": {
+        "babel-jest": "^16.0.0",
+        "babel-plugin-transform-async-to-generator": "^6.16.0",
+        "babel-polyfill": "^6.16.0",
+        "babel-preset-es2015": "^6.18.0",
+        "coveralls": "^2.11.14",
+        "husky": "^0.13.4",
+        "jest": "^16.0.2",
+        "lint-staged": "^4.2.3",
+        "prettier": "^1.2.2"
+    },
+    "keywords": ["font", "fonts", "os", "system"],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vutran/os-fonts.git"
+    },
+    "scripts": {
+        "precommit": "lint-staged",
+        "jest": "jest --coverage --verbose",
+        "test": "npm run jest"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --write --tab-width 4 --single-quote --trailing-comma es5",
+            "git add"
+        ]
+    }
 }
