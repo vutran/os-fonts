@@ -26,6 +26,7 @@
     ],
     "license": "MIT",
     "main": "index.js",
+    "types": "index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/vutran/os-fonts.git"
