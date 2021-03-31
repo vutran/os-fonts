@@ -53,7 +53,7 @@ Type: `String`
 
 The directory to read
 
-### getFontsInDirectory(dir)
+### getFontsInDirectorySync(dir)
 
 Returns paths to all fonts in the given directory (synchronous version of `getFontsInDirectory`).
 
