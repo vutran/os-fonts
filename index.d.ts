@@ -1,6 +1,6 @@
-type UseType = 'user' | 'local' | 'network' | 'system';
-
 declare module 'os-fonts' {
+    type UseType = 'user' | 'local' | 'network' | 'system';
+
     const osFonts: {
         /**
          * Retrieve all font files in the given directory.
