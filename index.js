@@ -35,8 +35,8 @@ const DEFAULT_DIR = FONT_DIRS[process.platform]['system'];
 /**
  * Retrieve all font files in the given directory.
  *
- * @param {String} dir - The directory to read
- * @return {Promise} - Array of fonts
+ * @param {string} dir The directory to read
+ * @return {Promise<string[]>} Array of fonts
  */
 exports.getFontsInDirectory = dir =>
     new Promise(resolve => {
@@ -53,8 +53,8 @@ exports.getFontsInDirectory = dir =>
 /**
  * Retrieve all font files in the given directory (synchronous).
  *
- * @param {String} dir - The directory to read
- * @return {Promise} - Array of fonts
+ * @param {string} dir The directory to read
+ * @return {string[]} Array of fonts
  */
 exports.getFontsInDirectorySync = dir => {
     try {
@@ -68,11 +68,17 @@ exports.getFontsInDirectorySync = dir => {
 /**
  * Get all fonts.
  *
- * @param {String} - The use type. Default is 'system'.
- * @return {Promise} - An array of fonts available
+ * @param {string} useType The use type. Default is 'system'.
+ * @return {Promise<string[]>} An array of fonts available
  */
 exports.getAll = useType =>
     exports.getFontsInDirectory(FONT_DIRS[process.platform][useType]);
 
+/**
+ * Get all fonts (synchronous).
+ *
+ * @param {string} useType The use type. Default is 'system'.
+ * @return {string[]} An array of fonts available
+ */
 exports.getAllSync = useType =>
     exports.getFontsInDirectorySync(FONT_DIRS[process.platform][useType]);
